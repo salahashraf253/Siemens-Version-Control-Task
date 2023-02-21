@@ -3,9 +3,9 @@
 ```
 git init 
 git add ./main.cpp
-git commmit -m "implement getSum feature"
+git commit -m "implement getSum feature"
 git push --all
-git remote add origin "link to github"
+git remote add origin https://github.com/salahashraf253/Siemens-Version-Control-Task.git
 
 //create new branch
 git checkout -b "getAvg-feature"
