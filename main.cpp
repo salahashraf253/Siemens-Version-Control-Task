@@ -13,12 +13,7 @@ int getSum(std::vector<int> arr)
 
 double getAverage(const std::vector<int>& vec) {
 
-    double avg = 0;
-    for(int i = 0; i < vec.size(); ++i) {
-        avg += vec[i];
-    }
-
-    return (vec.empty()) ? 0 : avg / vec.size();
+    return (vec.empty()) ? 0 : getSum(vec) / vec.size();
 }
 
 int main()
