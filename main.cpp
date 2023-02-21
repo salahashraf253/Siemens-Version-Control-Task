@@ -10,6 +10,15 @@ int getSum(std::vector<int> arr)
     }
     return sum;
 }
+int getMin(std::vector<int>arr)
+{
+    int mn=arr[0];
+    for(int i=1;i<arr.size();i++)
+    {
+        mn=std::min(arr[i],mn);
+    }
+    return mn;
+}
 
 double getAverage(const std::vector<int>& vec) {
 
@@ -20,6 +29,7 @@ int main()
 {
     std::vector<int>arr={1,2,3,4,5,6,7,8,9,10};
     std::cout<<getSum(arr)<<"\n";
+    std::cout<<"Minimum value is: "<<getMin(arr)<<"\n";
 
     std::cout << "Average: " << getAverage(arr) << "\n";
 }
